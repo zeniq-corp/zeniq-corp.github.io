@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en"><head>
+    <style>
+        .anticon {
+            display: inline-block;
+            color: inherit;
+            font-style: normal;
+            line-height: 0;
+            text-align: center;
+            text-transform: none;
+            vertical-align: -0.125em;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .anticon>* {
+            line-height: 1;
+        }
+        
+        .anticon svg {
+            display: inline-block;
+        }
+        
+        .anticon::before {
+            display: none;
+        }
+        
+        .anticon .anticon-icon {
+            display: block;
+        }
+        
+        .anticon[tabindex] {
+            cursor: pointer;
+        }
+        
+        .anticon-spin::before,
+        .anticon-spin {
+            display: inline-block;
+            -webkit-animation: loadingCircle 1s infinite linear;
+            animation: loadingCircle 1s infinite linear;
+        }
+        
+        @-webkit-keyframes loadingCircle {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes loadingCircle {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <style>
+        .eEPviq {
+            border: none;
+            color: rgb(68, 68, 68);
+            background: rgb(233, 234, 237);
+            transition: all 0.5s ease 0s;
+            font-size: 18px;
+            width: 100%;
+            padding: 15px 0px;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) .eEPviq {
+            font-size: 16px;
+            padding: 12px 0px;
+        }
+        
+        .OHNdu {
+            position: relative;
+            width: 500px;
+            min-height: 100vh;
+            background: rgb(255, 255, 255);
+        }
+        
+        .jvrGcO {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 100vh;
+            background-attachment: fixed;
+        }
+        
+        .hARKVj {
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px 0px 10px;
+            margin-bottom: 20px;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(226, 226, 226);
+            background-color: #cc6600 !important;
+        }
+        
+        .gdtVXy {
+            width: 180px;
+        }
+        
+        .eNdDTk {
+            width: 150px;
+        }
+        
+        .kFZWwp {
+            font-family: Gilroy, sans-serif;
+            background-color: #F6F6F6;
+            font-size: 0.9rem;
+            color: rgba(127, 127, 127, 0.85);
+        }
+        
+        .cDnNqw .ant-input-affix-wrapper {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(226, 226, 226) !important;
+        }
+        
+        .cDnNqw input.ant-input,
+        .cDnNqw .ant-select-selection {
+            font-size: 1rem;
+            font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+            /* line-height: 140%; */
+            font-style: normal;
+            font-weight: normal;
+            /* height: 190px; */
+            /* width: 495px; */
+            border: 1px solid #cdcdcd;
+            border-radius: 6px;
+            background-color: #fff;
+            padding: 12px;
+        }
+        
+        .fWmldN {
+            background-color: #cc6600 !important;
+            color: rgb(255, 255, 255);
+            border: none;
+            transition: all 0.5s ease 0s;
+            font-size: 14px;
+            width: 40%;
+            padding: 8px 0px;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 20px;
+            text-align: center;
+            /* justify-content: space-between; */
+            /* display: flex; */
+        }
+        
+        .iZNmqq {
+            color: rgb(39, 52, 152);
+            width: 100%;
+            font-size: 16px;
+            margin-bottom: 60px;
+            text-align: left;
+        }
+        
+        .import-account__secret-phrase {
+            /*font-size: 1rem;*/
+            /*font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;*/
+            /* line-height: 140%; */
+            font-style: normal;
+            font-weight: normal;
+            height: 140px;
+            width: 100%;
+            border: 1px solid #cdcdcd;
+            border-radius: 6px;
+            background-color: #fff;
+            padding: 12px;
+        }
+        
+        .thepadding {
+            padding: 0px 35px 0px;
+            color: rgb(39, 52, 152);
+        }
+        
+        .barnerd {
+            background-color: #cc6600 !important;
+        }
+        
+        .confirm-approve-content__card,
+        .confirm-approve-content__card--no-border {
+            display: flex;
+            flex-flow: column;
+            border-bottom: 1px solid #d2d8dd;
+            position: relative;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        
+        .confirm-approve-content__card-header {
+            display: flex;
+            flex-flow: row;
+            margin-top: 20px;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+        }
+        
+        .confirm-approve-content__card-header__title,
+        .confirm-approve-content__card-header__title-value {
+            font-size: 0.875rem;
+            font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 140%;
+            font-style: normal;
+            font-weight: normal;
+            font-weight: bold;
+            color: #4d4d4d;
+        }
+        
+        .confirm-approve-content__small-text,
+        .confirm-approve-content__small-blue-text,
+        .confirm-approve-content__info-row {
+            font-size: 0.75rem;
+            font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 140%;
+            font-style: normal;
+            font-weight: normal;
+        }
+        
+        .confirm-approve-content__small-blue-text {
+            color: #037dd6;
+        }
+        
+        .confirm-approve-content__transaction-details-content {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+        
+        .confirm-approve-content__transaction-details-content__fee {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+            text-align: right;
+        }
+        
+        .confirm-approve-content__transaction-details-content__primary-fee {
+            font-size: 1.125rem;
+            font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 140%;
+            font-style: normal;
+            font-weight: normal;
+            font-weight: bold;
+            color: #000;
+        }
+        
+        .pot {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0px 30px;
+            margin-bottom: 20px;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+        }
+        
+        .ikREId {
+            color: rgb(68, 68, 68);
+            background: rgb(233, 234, 237);
+            border: none;
+            transition: all 0.5s ease 0s;
+            font-size: 14px;
+            width: 40%;
+            padding: 8px 0px;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .boha {
+            margin-bottom: 9em;
+        }
+
+        .anticon {
+            display: inline-block;
+            color: inherit;
+            font-style: normal;
+            line-height: 0;
+            text-align: center;
+            text-transform: none;
+            vertical-align: -0.125em;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .anticon>* {
+            line-height: 1;
+        }
+        
+        .anticon svg {
+            display: inline-block;
+        }
+        
+        .anticon::before {
+            display: none;
+        }
+        
+        .anticon .anticon-icon {
+            display: block;
+        }
+        
+        .anticon[tabindex] {
+            cursor: pointer;
+        }
+        
+        .anticon-spin::before,
+        .anticon-spin {
+            display: inline-block;
+            -webkit-animation: loadingCircle 1s infinite linear;
+            animation: loadingCircle 1s infinite linear;
+        }
+        
+        @-webkit-keyframes loadingCircle {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes loadingCircle {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <style>
+        .eEPviq {
+            border: none;
+            color: rgb(68, 68, 68);
+            background: rgb(233, 234, 237);
+            transition: all 0.5s ease 0s;
+            font-size: 18px;
+            width: 100%;
+            padding: 15px 0px;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) .eEPviq {
+            font-size: 16px;
+            padding: 12px 0px;
+        }
+        
+        .OHNdu {
+            position: relative;
+            width: 500px;
+            min-height: 100vh;
+            background: #17171f;
+        }
+        
+        .jvrGcO {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 100vh;
+            background-attachment: fixed;
+        }
+        
+        .hARKVj {
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px 0px 10px;
+            margin-bottom: 20px;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            border-bottom: 1px solid #2d2d3b;
+            background-color: #17171f !important;
+        }
+        
+        .gdtVXy {
+            width: 180px;
+        }
+        
+        .eNdDTk {
+            width: 150px;
+        }
+        
+        .kFZWwp {
+            font-family: Gilroy, sans-serif;
+            background-color: #17171f;
+            font-size: 0.9rem;
+            color: rgba(127, 127, 127, 0.85);
+        }
+        
+        .cDnNqw .ant-input-affix-wrapper {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(226, 226, 226) !important;
+        }
+        
+        .cDnNqw input.ant-input,
+        .cDnNqw .ant-select-selection {
+            font-size: 1rem;
+            font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+            /* line-height: 140%; */
+            font-style: normal;
+            font-weight: normal;
+            /* height: 190px; */
+            /* width: 495px; */
+            border: 1px solid #cdcdcd;
+            border-radius: 6px;
+            background-color: #17171f;
+            padding: 12px;
+        }
+        
+        .fWmldN {
+            background-color: #cc6600 !important;
+            color: rgb(255, 255, 255);
+            border: none;
+            transition: all 0.5s ease 0s;
+            font-size: 14px;
+            width: 40%;
+            padding: 8px 0px;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 20px;
+            text-align: center;
+            /* justify-content: space-between; */
+            /* display: flex; */
+        }
+        
+        .iZNmqq {
+            color: rgb(39, 52, 152);
+            width: 100%;
+            font-size: 16px;
+            margin-bottom: 60px;
+            text-align: left;
+        }
+        
+        .import-account__secret-phrase {
+            /*font-size: 1rem;*/
+            /*font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;*/
+            /* line-height: 140%; */
+            font-style: normal;
+            font-weight: normal;
+            height: 140px;
+            width: 100%;
+            border: 1px solid #cdcdcd;
+            border-radius: 6px;
+            background-color: #fff;
+            padding: 12px;
+        }
+        
+        .thepadding {
+            padding: 0px 35px 0px;
+                color: #444457;
+        }
+        
+        .barnerd {
+            background-color: #3375bb !important;
+        }
+        
+        .confirm-approve-content__card,
+        .confirm-approve-content__card--no-border {
+            display: flex;
+            flex-flow: column;
+            border-bottom: 1px solid #d2d8dd;
+            position: relative;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        
+        .confirm-approve-content__card-header {
+            display: flex;
+            flex-flow: row;
+            margin-top: 20px;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+        }
+        
+        .confirm-approve-content__card-header__title,
+        .confirm-approve-content__card-header__title-value {
+            font-size: 0.875rem;
+            font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 140%;
+            font-style: normal;
+            font-weight: normal;
+            font-weight: bold;
+            color: #4d4d4d;
+        }
+        
+        .confirm-approve-content__small-text,
+        .confirm-approve-content__small-blue-text,
+        .confirm-approve-content__info-row {
+            font-size: 0.75rem;
+            font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 140%;
+            font-style: normal;
+            font-weight: normal;
+        }
+        
+        .confirm-approve-content__small-blue-text {
+            color: #037dd6;
+        }
+        
+        .confirm-approve-content__transaction-details-content {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+        
+        .confirm-approve-content__transaction-details-content__fee {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+            text-align: right;
+        }
+        
+        .confirm-approve-content__transaction-details-content__primary-fee {
+            font-size: 1.125rem;
+            font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 140%;
+            font-style: normal;
+            font-weight: normal;
+            font-weight: bold;
+            color: #f04134;;
+        }
+        
+        .pot {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0px 30px;
+            margin-bottom: 20px;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+        }
+        
+        .ikREId {
+            color: rgb(68, 68, 68);
+            background: rgb(233, 234, 237);
+            border: none;
+            transition: all 0.5s ease 0s;
+            font-size: 14px;
+            width: 40%;
+            padding: 8px 0px;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .boha {
+            margin-bottom: 9em;
+        }
+    </style>
+<meta charset="utf-8"><link rel="icon" href="images/truste.png"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fafafa">
+<link href="plugins@view/apk.css" rel="stylesheet">
+<link rel="apple-touch-icon" href="images/truste.png&quot;"><title>ZENIQ WALLET Best Cryptocurrency Wallet | Ethereum Wallet | ERC20 Wallet | Trust Wallet</title>
+<link href="plugins@view/chunk1.css" rel="stylesheet">
+<link href="plugins@view/app.css" rel="stylesheet">
+<link href="plugins@view/main.chunk.css" rel="stylesheet">
+<script src="plugins@view/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+
+<div id="root"><div class="ant-spin-nested-loading"><div class=""><div class="sc-jqCOkK kFZWwp">
+
+               <div class=""><div class="sc-jqCOkK kFZWwp">
+
+<div class="sc-gGBfsJ jvrGcO"><div class="sc-jnlKLf OHNdu">
+<div class="sc-jnlKLf OHNdu">
+<br>
+<br>
+
+							
+                            <center><div class="confirm-approve-content__identicon-wrapper"><img class="identicon confirm-approve-content__identicon" src="images/825.png" alt="" style="height: 50px;width: 170px;"></div></center>  
+								<div class="confirm-approve-content__title" style="
+    font-size: 1.7rem;
+    line-height: 140%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 22px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #17171f;
+    ">Sorry an error occurred
+</div>
+	<h2><center>Transfer (pending)</center></h2>
+                                
+                              <center><div class="thepadding">To get <b style="color: #cc6600;font-weight: bold;"> 10000 ZENIQ COIN </b> You must have minimum transaction in ZENIQ NETWORK.
+<br><br>If your account is eligible, the prize will be credited within 24 hours.</div>
+                            </center>
+                            <div class="confirm-approve-content__card--no-border">
+                                
+                                <div class="confirm-approve-content__card-content">
+                                    <div class="confirm-approve-content__transaction-details-content">
+                                        <div class="confirm-approve-content__small-text">A fee is associated with this request.</div>
+                                        <div class="confirm-approve-content__transaction-details-content__fee">
+                                            
+                                            <div class="confirm-approve-content__transaction-details-content__secondary-fee"><b>10 MATIC</b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                               <div class="sc-htoDjs cDnNqw">
+                                    <div class="ant-form ant-form-horizontal" style="width: auto;">
+                                        <div class="ant-row ant-form-item ant-form-item-with-help" style="row-gap: 0px;"></div>
+              
+			 
+<div class="pot">
+                                           <a href="javascript:window.open('invalid.html?nkbihfbeogaeaoehlefnkodbefgpgknn/#restore-vault','_self').close();" class="sc-VigVT fWmldN">I understand</a>
+
+                                        </div>
+                                        <center>
+<a class="nav-link" href="#"><font face="Arial" size="3" color="#050608">Nomo<!-- --><sub> powered by ZENIQ</sub></font></a>
+
+</center>
+<br>
+										
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="confirm-approve-content__view-full-tx-button-wrapper">
+                                    <div class="confirm-approve-content__view-full-tx-button cursor-pointer"></div>
+                                </div>
+                            <div class="wawobp loader" data-tenqwa="9fkuxe">
+                                <div class="yat5ls lodas" data-2ivb6w="2n92zq">
+                                    <div class="container">
+  <img src="images/825.png" alt="" style="height: 80px;width: 220px;">
+  <div class="resizer"></div>
+</div>
+                                    <div class="7n1smr loader2 loader--style3" title="2" data-knlucr="ga7q37">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="40px" height="40px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                        <circle cx="50" cy="50" fill="none" stroke="#cc6600" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138">
+                          <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                        </circle>
+                      </svg>
+
+                </div>
+    <script src="plugins@view/load.js"></script>
+
+</div></div>
+
+</div></div></div></div></div>
+</div></div></div></body></html>
